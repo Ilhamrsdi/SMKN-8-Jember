@@ -8,3 +8,9 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('beranda');
 })->name('beranda');
+Route::get('/home', function () {
+    return view('beranda');
+})->name('beranda');
+Route::get('/pengumuman', function () {
+    return view('pengumuman');
+})->name('pengumuman');
