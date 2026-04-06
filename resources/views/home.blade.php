@@ -65,7 +65,7 @@
   <!-- Navbar -->
   <div class="navbar">
     <div class="logo">
-      <img src="logo-smk.jpeg">
+      <img src="{{ asset('image/logo-smk.jpeg') }}" alt="logo">
       SMKN 8 JEMBER
     </div>
 
