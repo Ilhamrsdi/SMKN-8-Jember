@@ -167,7 +167,7 @@ PENGUMUMAN SMKN 8 JEMBER
 </div>
 
 <div class="beasiswa-right">
-<img src="{{ asset('images/images.webp') }}" alt="foto beasiswa">
+<img src="{{ asset('images/images.webp') }}" alt="foto">
 <div class="nama">Hj. Nurhayati, S.Pd., M.Pd</div>
 </div>
 
