@@ -68,19 +68,19 @@ body {
   <div class="grid">
     
     <div class="card">
-      <img src="https://smkn8jember.sch.id/wp-content/uploads/2025/11/572890972_25171343909166641_5889162738581101429_n.jpg" alt="foto 1">
+      <img src="{{ asset('images/profil1.jpg') }}" alt="foto 1">
     </div>
 
     <div class="card">
-      <img src="profile2.jpg" alt="foto 2">
+      <img src="{{ asset('images/profil2.jpg') }}" alt="foto 2">
     </div>
 
     <div class="card">
-      <img src="profile3.jpg" alt="foto 3">
+      <img src="{{ asset('images/profil3.jpg') }}" alt="foto 3">
     </div>
 
     <div class="card">
-      <img src="profile4.jpg" alt="foto 4">
+      <img src="{{ asset('images/profil4.jpg') }}" alt="foto 4">
     </div>  
 
   </div>
