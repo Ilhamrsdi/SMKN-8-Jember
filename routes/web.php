@@ -8,3 +8,7 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('beranda');
 })->name('beranda');
+
+Route::get('/profil', function () {
+    return view('profile');
+})->name('profile');
