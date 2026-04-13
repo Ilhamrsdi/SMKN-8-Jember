@@ -14,4 +14,6 @@ Route::get('/home', function () {
 Route::get('/jurusan', function () {
     return view('jurusan');
 })->name('jusuran');
-
+Route::get('/berita', function () {
+    return view('berita');
+})->name('berita');

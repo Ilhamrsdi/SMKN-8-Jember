@@ -71,43 +71,43 @@
     <div class="grid">
 
       <div class="card">
-        <img src="img/tkj.jpg">
+        <img src="{{ asset('images/tkj.jpeg') }}" alt="tkj">
         <h4>TKJ</h4>
         <p>Teknik Komputer & Jaringan</p>
       </div>
 
       <div class="card">
-        <img src="img/rpl.jpg">
+        <img src="{{ asset('images/rpl.jpeg') }}" alt="rpl">
         <h4>RPL</h4>
         <p>Rekayasa Perangkat Lunak</p>
       </div>
 
       <div class="card">
-        <img src="img/dkv.jpg">
+        <img src="{{ asset('images/dkv.jpeg') }}" alt="dkv">
         <h4>DKV</h4>
         <p>Desain Komunikasi Visual</p>
       </div>
 
       <div class="card">
-        <img src="img/atph.jpg">
+        <img src="{{ asset('images/aph.jpeg') }}" alt="aph">
         <h4>ATPH</h4>
         <p>Agribisnis Tanaman Pangan & Hortikultura</p>
       </div>
 
       <div class="card">
-        <img src="img/apt.jpg">
+        <img src="{{ asset('images/apt.jpeg') }}" alt="apt">
         <h4>APT</h4>
         <p>Agribisnis Pembenihan Tanaman</p>
       </div>
 
       <div class="card">
-        <img src="img/tsm.jpg">
+        <img src="{{ asset('images/tsm.jpeg') }}" alt="tsm">
         <h4>TSM</h4>
         <p>Teknik Sepeda Motor</p>
       </div>
 
       <div class="card">
-        <img src="img/tkr.jpg">
+        <img src="{{ asset('images/tkr.jpeg') }}" alt="tkr">
         <h4>TKR</h4>
         <p>Teknik Kendaraan Ringan</p>
       </div>
