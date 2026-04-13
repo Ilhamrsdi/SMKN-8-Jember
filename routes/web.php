@@ -9,6 +9,10 @@ Route::get('/home', function () {
     return view('beranda');
 })->name('beranda');
 
-Route::get('/profil', function () {
+Route::get('/profile', function () {
     return view('profile');
 })->name('profile');
+
+Route::get('/galeri', function () {
+    return view('galeri');
+})->name('galeri');

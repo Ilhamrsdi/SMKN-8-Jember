@@ -3,25 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profile SMKN 8 Jember</title>
+<title>Galeri SMKN 8 Jember</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #FF9E62, #B25E39);
+  background: linear-gradient(to bottom, #FF9E62, #E54500);
 }
 
-/* SECTION PROFIL */
-.profil {
-  padding: 40px 20px 80px;
-  min-height: 100vh;
+/* CONTAINER */
+.container {
+  padding: 40px 20px 80px; /* bawah diperbesar */
+  text-align: center;
 }
 
 /* TITLE */
-.profil h2 {
-  text-align: center;
+h2 {
   color: white;
   margin-bottom: 30px;
   letter-spacing: 1px;
@@ -30,8 +29,8 @@ body {
 /* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* dari 3 jadi 2 */
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px; /* diperbesar dari 25px */
   max-width: 1000px;
   margin: auto;
 }
@@ -50,21 +49,37 @@ body {
 /* IMAGE */
 .card img {
   width: 100%;
-  height: 250px;
+  height: 350px;
   object-fit: cover;
   border-radius: 3px;
 }
 
-/* SAAT DIKLIK */
+/* RESPONSIVE */
+@media(max-width: 900px){
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* EFEK KLIK */
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* saat diklik */
 .card.active {
-  transform: scale(1.05);
+  transform: scale(1.05); /* lebih kecil biar tidak terlalu zoom */
   box-shadow: 0 12px 25px rgba(0,0,0,0.4);
   z-index: 2;
   position: relative;
 }
 
-/* RESPONSIVE */
-@media(max-width:1200px){
+@media(max-width: 600px){
   .grid {
     grid-template-columns: 1fr;
   }
@@ -74,26 +89,34 @@ body {
 
 <body>
 
-<div class="profil">
-  <h2>PROFIL SMKN 8 JEMBER</h2>
+<div class="container">
+  <h2>GALERI SMKN 8 JEMBER</h2>
 
   <div class="grid">
     
     <div class="card">
-      <img src="{{ asset('images/profil1.jpg') }}" alt="foto 1">
+      <img src="{{ asset('images/galeri1.jpg') }}" alt="galeri">
     </div>
 
     <div class="card">
-      <img src="{{ asset('images/profil2.jpg') }}" alt="foto 2">
+      <img src="{{ asset('images/galeri2.jpg') }}" alt="galeri">
     </div>
 
     <div class="card">
-      <img src="{{ asset('images/profil3.jpg') }}" alt="foto 3">
+      <img src="{{ asset('images/galeri3.jpg') }}" alt="galeri">
     </div>
 
     <div class="card">
-      <img src="{{ asset('images/profil4.jpg') }}" alt="foto 4">
-    </div>  
+      <img src="{{ asset('images/galeri4.jpg') }}" alt="galeri">
+    </div>
+
+    <div class="card">
+      <img src="{{ asset('images/galeri5.jpg') }}" alt="galeri">
+    </div>
+
+    <div class="card">
+      <img src="{{ asset('images/galeri6.jpg') }}" alt="galeri">
+    </div>
 
   </div>
 </div>
