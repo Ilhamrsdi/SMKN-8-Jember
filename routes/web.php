@@ -23,3 +23,8 @@ Route::get('/galeri', function () {
     return view('galeri');
 })->name('galeri');
 
+
+Route::get('/pengumuman', function () {
+    return view('penguman');
+})->name('pengumuman');
+
