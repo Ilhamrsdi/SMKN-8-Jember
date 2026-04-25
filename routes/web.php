@@ -14,3 +14,6 @@ Route::get('/home', function () {
 Route::get('/pengumuman', function () {
     return view('pengumuman');
 })->name('pengumuman');
+Route::get('/berita', function () {
+    return view('berita');
+})->name('berita');
