@@ -25,14 +25,6 @@ Route::get('/galeri', function () {
 
 
 Route::get('/pengumuman', function () {
-<<<<<<< HEAD
     return view('penguman');
 })->name('pengumuman');
 
-=======
-    return view('pengumuman');
-})->name('pengumuman');
-Route::get('/berita', function () {
-    return view('berita');
-})->name('berita');
->>>>>>> origin/asyabila
