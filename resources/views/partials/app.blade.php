@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMKN 8 Jember</title>
+    <title>SMKN 8 JEMBER</title>
 
     <style>
         * {
@@ -17,13 +18,14 @@
             background-color: #f5f5f5;
         }
 
-        /* Navbar */
+        /* NAVBAR */
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: #e6b97a;
             padding: 10px 30px;
+            flex-wrap: wrap;
         }
 
         .logo {
@@ -31,20 +33,18 @@
             align-items: center;
             color: white;
             font-weight: bold;
+            gap: 10px;
         }
 
         .logo img {
             width: 40px;
-            margin-right: 10px;
+            height: 40px;
         }
 
         .menu {
             display: flex;
             list-style: none;
-        }
-
-        .menu li {
-            margin: 0 15px;
+            gap: 20px;
         }
 
         .menu li a {
@@ -66,7 +66,7 @@
             font-weight: bold;
         }
 
-        /* Hero Image */
+        /* HERO */
         .hero {
             width: 100%;
             height: 500px;
@@ -79,29 +79,81 @@
             object-fit: cover;
         }
 
-        /* Responsive */
+        /* JURUSAN SECTION */
+        .container {
+            padding: 30px;
+            text-align: center;
+            background-color: #e6b86a;
+        }
+
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #d9d9d9;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .card h4 {
+            margin: 10px 0 5px;
+        }
+
+        .card p {
+            font-size: 12px;
+        }
+
+        /* RESPONSIVE */
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
+                gap: 10px;
             }
 
             .menu {
                 flex-direction: column;
-                margin: 10px 0;
+                align-items: center;
             }
 
             .hero {
                 height: 300px;
             }
+
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Navbar -->
+    <!-- NAVBAR -->
     <div class="navbar">
         <div class="logo">
-             <img src="{{ asset('images/download.png') }}" alt="logo">
+            <img src="{{ asset('images/download.png') }}" alt="logo">
             SMKN 8 JEMBER
         </div>
 
@@ -116,10 +168,11 @@
         <a href="#" class="login-btn">LOGIN</a>
     </div>
 
-    <!-- Hero (Foto Lobby Sekolah) -->
+    <!-- HERO -->
     <div class="hero">
-         <img src="{{ asset('images/lobbysmk.jpeg') }}" alt="lobby">
+        <img src="{{ asset('images/lobbysmk.jpeg') }}" alt="lobby sekolah">
     </div>
 
 </body>
+
 </html>
