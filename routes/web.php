@@ -5,15 +5,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', function () {
+    return view('beranda');
+})->name('beranda');
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
 Route::get('/beranda', function () {
     return view('beranda');
 })->name('beranda');
 
 Route::get('/jurusan', function () {
     return view('jurusan');
-})->name('jusuran');
-
-
+})->name('jurusan');
 
 Route::get('/profile', function () {
     return view('profile');
@@ -23,16 +30,10 @@ Route::get('/galeri', function () {
     return view('galeri');
 })->name('galeri');
 
-
 Route::get('/pengumuman', function () {
-<<<<<<< HEAD
-    return view('penguman');
-})->name('pengumuman');
-
-=======
     return view('pengumuman');
 })->name('pengumuman');
+
 Route::get('/berita', function () {
     return view('berita');
 })->name('berita');
->>>>>>> origin/asyabila
