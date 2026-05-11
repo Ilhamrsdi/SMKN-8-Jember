@@ -160,12 +160,6 @@ PENGUMUMAN SMKN 8 JEMBER
 
 <div class="beasiswa">
 
-<div class="beasiswa-left">
-<p>SELAMAT & SUKSES</p>
-<p>kepada peserta didik yang menerima beasiswa</p>
-<h3>Smart Scholarship YBM BRILian SBO MALANG</h3>
-</div>
-
 <div class="beasiswa-right">
 <img src="{{ asset('images/image.png') }}" alt="foto pengumuman">
 <div class="nama">Hj. Nurhidana, S.Pd., M.Pd</div>
@@ -194,11 +188,7 @@ SMKN 8 Jember, was toppp!!
 
 <!-- PURNA TUGAS -->
 
-<div class="purna-tugas">
 
-<img src="{{ asset('images/foto1.jpg') }}" alt="foto purna tugas">
-
-<div class="info">
 
 <h2>Selamat Purna Tugas</h2>
 
@@ -225,11 +215,6 @@ membangun dan mengembangkan sekolah ini.
 
 <div class="beasiswa">
 
-<div class="beasiswa-left">
-<p>SELAMAT & SUKSES</p>
-<p>kepada peserta didik yang menerima beasiswa</p>
-<h3>Smart Scholarship YBM BRILian SBO MALANG</h3>
-</div>
 
 <div class="beasiswa-right">
 <img src="{{ asset('images/image.png') }}" alt="foto pengumuman">
@@ -241,7 +226,7 @@ membangun dan mengembangkan sekolah ini.
 <!-- FOTO PENGUMUMAN -->
 
 <div class="foto-pengumuman">
-<img src="{{ asset('images/foto1.jpg') }}" alt="foto pengumuman">
+<img src="{{ asset('images/images5.jpeg') }}" alt="foto pengumuman">
 </div>
 
 <div class="deskripsi">
