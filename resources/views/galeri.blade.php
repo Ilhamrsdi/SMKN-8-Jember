@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMKN 8 Jember - Berita, Jurusan & Galeri</title>
+    <title>SMKN 8 Jember - Berita & Galeri</title>
 
     <style>
         /* RESET & BASE STYLES */
@@ -168,57 +168,6 @@
             margin-top: 10px;
         }
 
-        /* --- JURUSAN SECTION --- */
-        .jurusan-section {
-            background-color: #f5f5f5; /* Sesuai request awal */
-            padding: 60px 0;
-        }
-
-        .jurusan-section .section-title {
-            color: #333;
-            text-shadow: none;
-        }
-
-        .grid-jurusan {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1100px;
-            margin: auto;
-            padding: 0 20px;
-        }
-
-        .jurusan-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding-bottom: 20px;
-            transition: transform 0.3s;
-        }
-
-        .jurusan-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .jurusan-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .jurusan-card h4 {
-            margin: 15px 0 5px;
-            color: #333;
-        }
-
-        .jurusan-card p {
-            font-size: 14px;
-            color: #666;
-            padding: 0 10px;
-        }
-
         /* --- GALERI SECTION --- */
         .galeri-wrapper {
             background: linear-gradient(to bottom, #FF9E62, #E54500);
@@ -234,7 +183,7 @@
             margin: auto;
         }
 
-        .galeri-card {
+        .card {
             background: #e6e6e6;
             padding: 10px;
             border-radius: 5px;
@@ -244,14 +193,14 @@
             cursor: pointer;
         }
 
-        .galeri-card img {
+        .card img {
             width: 100%;
             height: 350px;
             object-fit: cover;
             border-radius: 3px;
         }
 
-        .galeri-card.active {
+        .card.active {
             transform: scale(1.05);
             box-shadow: 0 12px 25px rgba(0,0,0,0.4);
             z-index: 2;
@@ -325,7 +274,7 @@
         <a href="#" class="login-btn">LOGIN</a>
     </nav>
 
-    <!-- 2. HERO SECTION -->
+    <!-- 2. HERO -->
     <div class="hero">
         <img src="{{ asset('images/lobbysmk.jpeg') }}" alt="Lobby SMKN 8 Jember">
     </div>
@@ -334,6 +283,7 @@
     <section class="container">
         <h2 class="section-title">Berita Terkini</h2>
 
+        <!-- Berita 1 -->
         <div class="news-grid">
             <div class="poster">
                 <div class="label">SMK NEGERI 8 JEMBER</div>
@@ -342,15 +292,17 @@
             <div class="box text">
                 <p><b>A Landmark Partnership: SMKN 8 Jember and BIT</b></p>
                 <p>SMK Negeri 8 Jember resmi menjalin kerja sama internasional melalui penandatanganan MoU dengan Beijing Institute of Technology (BIT).</p>
-                <p>Kerja sama ini membuka peluang besar bagi peserta didik untuk mengembangkan kompetensi global.</p>
+                <p>Kerja sama ini membuka peluang besar bagi peserta didik untuk mengembangkan kompetensi global dan beasiswa internasional.</p>
                 <p class="slogan">SMKN 8 JEMBER – WE STOPT!</p>
             </div>
         </div>
 
+        <!-- Berita 2 -->
         <div class="news-grid">
             <div class="box text">
                 <p><b>Upacara Bendera: Hari Pahlawan Nasional 2025</b></p>
                 <p>Senin, 10 November 2025, SMK Negeri 8 Jember menggelar upacara bendera khidmat sebagai momentum pengingat cinta tanah air.</p>
+                <p>Upacara diikuti oleh seluruh warga sekolah dengan penuh semangat nasionalisme.</p>
                 <p class="slogan">SMKN 8 JEMBER – WE STOPT!</p>
             </div>
             <div class="poster">
@@ -360,87 +312,46 @@
         </div>
     </section>
 
-    <!-- 4. JURUSAN SECTION -->
-    <section class="jurusan-section">
-        <div class="container">
-            <h2 class="section-title">JURUSAN</h2>
-            <div class="grid-jurusan">
-                <div class="jurusan-card">
-                    <img src="{{ asset('images/tkj.jpeg') }}" alt="TKJ">
-                    <h4>TKJ</h4>
-                    <p>Teknik Komputer & Jaringan</p>
-                </div>
-                <div class="jurusan-card">
-                    <img src="{{ asset('images/rpl.jpeg') }}" alt="RPL">
-                    <h4>RPL</h4>
-                    <p>Rekayasa Perangkat Lunak</p>
-                </div>
-                <div class="jurusan-card">
-                    <img src="{{ asset('images/dkv.jpeg') }}" alt="DKV">
-                    <h4>DKV</h4>
-                    <p>Desain Komunikasi Visual</p>
-                </div>
-                <div class="jurusan-card">
-                    <img src="{{ asset('images/aph.jpeg') }}" alt="ATPH">
-                    <h4>ATPH</h4>
-                    <p>Agribisnis Tanaman Pangan & Hortikultura</p>
-                </div>
-                <div class="jurusan-card">
-                    <img src="{{ asset('images/apt.jpeg') }}" alt="APT">
-                    <h4>APT</h4>
-                    <p>Agribisnis Pembenihan Tanaman</p>
-                </div>
-                <div class="jurusan-card">
-                    <img src="{{ asset('images/tsm.jpeg') }}" alt="TSM">
-                    <h4>TSM</h4>
-                    <p>Teknik Sepeda Motor</p>
-                </div>
-                <div class="jurusan-card">
-                    <img src="{{ asset('images/tkr.jpeg') }}" alt="TKR">
-                    <h4>TKR</h4>
-                    <p>Teknik Kendaraan Ringan</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. GALERI SECTION -->
+    <!-- 4. GALERI SECTION -->
     <section class="galeri-wrapper">
         <div class="container">
             <h2 class="section-title">Galeri Sekolah</h2>
+            
             <div class="grid-galeri">
-                <div class="galeri-card">
+                <div class="card">
                     <img src="{{ asset('images/galeri1.jpg') }}" alt="galeri 1">
                 </div>
-                <div class="galeri-card">
+                <div class="card">
                     <img src="{{ asset('images/galeri2.jpg') }}" alt="galeri 2">
                 </div>
-                <div class="galeri-card">
+                <div class="card">
                     <img src="{{ asset('images/galeri3.jpg') }}" alt="galeri 3">
                 </div>
-                <div class="galeri-card">
+                <div class="card">
                     <img src="{{ asset('images/galeri4.jpg') }}" alt="galeri 4">
                 </div>
-                <div class="galeri-card">
+                <div class="card">
                     <img src="{{ asset('images/galeri5.jpg') }}" alt="galeri 5">
                 </div>
-                <div class="galeri-card">
+                <div class="card">
                     <img src="{{ asset('images/galeri6.jpg') }}" alt="galeri 6">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6. FOOTER -->
+    <!-- 5. FOOTER -->
     <footer class="footer">
         &copy; 2026 SMKN 8 JEMBER | All Rights Reserved
     </footer>
 
-    <!-- SCRIPT -->
+    <!-- 6. SCRIPT -->
     <script>
-        const cards = document.querySelectorAll('.galeri-card');
+        const cards = document.querySelectorAll('.card');
         cards.forEach(card => {
             card.addEventListener('click', () => {
+                // Menghapus class active dari card lain (opsional)
+                // cards.forEach(c => c.classList.remove('active')); 
                 card.classList.toggle('active');
             });
         });
