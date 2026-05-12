@@ -79,14 +79,13 @@ body{
     object-fit:cover;
 }
 
-/* SECTION PROFIL */
+/* PROFIL */
 .profil{
     padding:40px 20px 80px;
     min-height:100vh;
     background:linear-gradient(to bottom, #FF9E62, #B25E39);
 }
 
-/* TITLE */
 .profil h2{
     text-align:center;
     color:white;
@@ -141,19 +140,130 @@ body{
     position:relative;
 }
 
-/* SECTION JURUSAN */
+/* JURUSAN */
 .jurusan{
     padding:50px 20px 80px;
-    background:#f5f5f5;
+    background:linear-gradient(to bottom, #FF9E62, #B25E39);
 }
 
 .jurusan h2{
     text-align:center;
     margin-bottom:40px;
-    color:#B25E39;
+    color:white;
+}
+
+/* BERITA */
+.berita{
+    background:#f39c6b;
+    padding:50px 20px;
+}
+
+.container{
+    width:900px;
+    margin:auto;
+}
+
+.title{
+    text-align:center;
+    color:#fff;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.berita-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-bottom:20px;
+}
+
+.box{
+    background:white;
+    padding:12px;
+    border-radius:6px;
+}
+
+.poster{
+    background:#7b2cbf;
+    padding:10px;
+    border-radius:8px;
+    color:white;
+}
+
+.poster img{
+    width:100%;
+    border-radius:5px;
+    margin-bottom:8px;
+}
+
+.poster .label{
+    background:#5a189a;
+    padding:5px;
+    text-align:center;
+    font-size:12px;
+    border-radius:20px;
+    margin-bottom:8px;
+}
+
+.text p{
+    font-size:14px;
+    text-align:justify;
+    line-height:1.5;
+    margin-bottom:10px;
+}
+
+.text b{
+    color:#000;
+}
+
+.bottom{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:20px;
+}
+
+.footer{
+    margin-top:20px;
+    color:white;
+    font-size:13px;
+}
+
+/* GALERI */
+.galeri{
+    padding:40px 20px 80px;
+    background:linear-gradient(to bottom, #FF9E62, #E54500);
+    min-height:100vh;
+}
+
+.galeri h2{
+    color:white;
+    margin-bottom:30px;
+    text-align:center;
+    letter-spacing:1px;
+}
+
+.galeri-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.galeri .card img{
+    height:350px;
 }
 
 /* RESPONSIVE */
+@media (max-width:900px){
+    .galeri-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
 @media (max-width:768px){
 
     .navbar{
@@ -169,7 +279,19 @@ body{
         height:300px;
     }
 
-    .grid{
+    .grid,
+    .berita-grid,
+    .bottom{
+        grid-template-columns:1fr;
+    }
+
+    .container{
+        width:95%;
+    }
+}
+
+@media (max-width:600px){
+    .galeri-grid{
         grid-template-columns:1fr;
     }
 }
@@ -180,7 +302,7 @@ body{
 
 <!-- NAVBAR -->
 <div class="navbar">
-    
+
     <div class="logo">
         <img src="{{ asset('images/download.png') }}" alt="logo">
         SMKN 8 JEMBER
@@ -283,20 +405,413 @@ body{
 
 </div>
 
+<!-- BERITA -->
+<div class="berita">
+
+<div class="container">
+
+    <div class="title">BERITA SMKN 8 JEMBER</div>
+
+    <!-- BERITA 1 -->
+    <div class="berita-grid">
+
+        <div class="poster">
+            <div class="label">SMK NEGERI 8 JEMBER</div>
+            <img src="{{ asset('images/images1.jpeg') }}">
+        </div>
+
+        <div class="box text">
+            <p><b>A Landmark Partnership: SMKN 8 Jember and Beijing Institute of Technology (BIT)</b></p>
+
+            <p>
+                SMK Negeri 8 Jember resmi menjalin kerja sama internasional melalui penandatanganan Memorandum of Understanding (MoU) dengan Beijing Institute of Technology (BIT).
+            </p>
+
+            <p>
+                Kerja sama ini membuka peluang besar bagi peserta didik SMKN 8 Jember untuk mengembangkan kompetensi global, melanjutkan pendidikan ke jenjang lebih tinggi, serta mengakses program pelatihan dan beasiswa internasional.
+            </p>
+
+            <p>
+                Kolaborasi ini menjadi bukti komitmen SMKN 8 Jember dalam mencetak lulusan unggul, berdaya saing, dan siap menghadapi tantangan global.
+            </p>
+
+            <p><b>SMKN 8 JEMBER – WE STOPT!</b></p>
+        </div>
+
+    </div>
+
+    <!-- BERITA 2 -->
+    <div class="bottom">
+
+        <div class="box text">
+            <p><b>SMKN 8 Jember melaksanakan upacara bendera dalam rangka memperingati Hari Pahlawan Nasional 2025</b></p>
+
+            <p>
+                Senin, 10 November 2025, SMK Negeri 8 Jember menggelar upacara bendera khidmat dalam rangka memperingati Hari Pahlawan Nasional.
+            </p>
+
+            <p>
+                Upacara diikuti oleh seluruh siswa dan guru dengan penuh semangat nasionalisme.
+            </p>
+
+            <p>
+                Momentum ini menjadi pengingat akan pentingnya nilai-nilai perjuangan, pengorbanan, dan cinta tanah air.
+            </p>
+
+            <p><b>SMKN 8 JEMBER – WE STOPT!</b></p>
+        </div>
+
+        <div class="poster">
+            <div class="label">SMK NEGERI 8 JEMBER</div>
+            <img src="{{ asset('images/images2.jpeg') }}">
+        </div>
+
+    </div>
+
+    <!-- BERITA 3 -->
+    <div class="berita-grid" style="margin-top:20px;">
+
+        <div class="poster">
+            <div class="label">SMK NEGERI 8 JEMBER</div>
+            <img src="{{ asset('images/images3.jpeg') }}">
+        </div>
+
+        <div class="box text">
+            <p><b>A Landmark Partnership: SMKN 8 Jember and Beijing Institute of Technology (BIT)</b></p>
+
+            <p>
+                SMK Negeri 8 Jember resmi menjalin kerja sama internasional melalui penandatanganan Memorandum of Understanding (MoU) dengan Beijing Institute of Technology (BIT).
+            </p>
+
+            <p>
+                Kerja sama ini membuka peluang besar bagi peserta didik SMKN 8 Jember untuk mengembangkan kompetensi global, melanjutkan pendidikan ke jenjang lebih tinggi, serta mengakses program pelatihan dan beasiswa internasional.
+            </p>
+
+            <p>
+                Kolaborasi ini menjadi bukti komitmen SMKN 8 Jember dalam mencetak lulusan unggul, berdaya saing, dan siap menghadapi tantangan global.
+            </p>
+
+            <p><b>SMKN 8 JEMBER – WE STOPT!</b></p>
+        </div>
+
+    </div>
+
+    <!-- BERITA 4 -->
+    <div class="bottom">
+
+        <div class="box text">
+            <p><b>SMKN 8 Jember melaksanakan upacara bendera dalam rangka memperingati Hari Pahlawan Nasional 2025</b></p>
+
+            <p>
+                Senin, 10 November 2025, SMK Negeri 8 Jember menggelar upacara bendera khidmat dalam rangka memperingati Hari Pahlawan Nasional.
+            </p>
+
+            <p>
+                Upacara diikuti oleh seluruh siswa dan guru dengan penuh semangat nasionalisme.
+            </p>
+
+            <p>
+                Momentum ini menjadi pengingat akan pentingnya nilai-nilai perjuangan, pengorbanan, dan cinta tanah air.
+            </p>
+
+            <p><b>SMKN 8 JEMBER – WE STOPT!</b></p>
+        </div>
+
+        <div class="poster">
+            <div class="label">SMK NEGERI 8 JEMBER</div>
+            <img src="{{ asset('images/images4.jpeg') }}">
+        </div>
+
+    </div>
+
+    <div class="footer">SMKN 8 JEMBER – WE STOPT!</div>
+
+</div>
+</div>
+
+<!-- GALERI -->
+<div class="galeri">
+
+    <h2>GALERI SMKN 8 JEMBER</h2>
+
+    <div class="galeri-grid">
+
+        <div class="card">
+            <img src="{{ asset('images/galeri1.jpg') }}" alt="galeri">
+        </div>
+
+        <div class="card">
+            <img src="{{ asset('images/galeri2.jpg') }}" alt="galeri">
+        </div>
+
+        <div class="card">
+            <img src="{{ asset('images/galeri3.jpg') }}" alt="galeri">
+        </div>
+
+        <div class="card">
+            <img src="{{ asset('images/galeri4.jpg') }}" alt="galeri">
+        </div>
+
+        <div class="card">
+            <img src="{{ asset('images/galeri5.jpg') }}" alt="galeri">
+        </div>
+
+        <div class="card">
+            <img src="{{ asset('images/galeri6.jpg') }}" alt="galeri">
+        </div>
+
+    </div>
+
+</div>
+
+<!-- TAMBAHKAN DI BAWAH SECTION GALERI -->
+
+<!-- PENGUMUMAN -->
+<div class="pengumuman">
+
+    <div class="header-pengumuman">
+        PENGUMUMAN SMKN 8 JEMBER
+    </div>
+
+    <div class="container-pengumuman">
+
+        <!-- PENGUMUMAN 1 -->
+        <div class="beasiswa">
+
+            <div class="beasiswa-left">
+                <p>SELAMAT & SUKSES</p>
+                <p>kepada peserta didik yang menerima beasiswa</p>
+                <h3>Smart Scholarship YBM BRILian SBO MALANG</h3>
+            </div>
+
+            <div class="beasiswa-right">
+                <img src="{{ asset('images/image.png') }}" alt="foto pengumuman">
+                <div class="nama">Hj. Nurhidana, S.Pd., M.Pd</div>
+            </div>
+
+        </div>
+
+        <div class="foto-pengumuman">
+            <img src="{{ asset('images/foto1.jpg') }}" alt="foto pengumuman">
+        </div>
+
+        <div class="deskripsi">
+
+            <b>ESKALASI DAN PERSEMBAHAN</b><br><br>
+
+            Alhamdulillah peserta didik lulus seleksi dan berhak menerima beasiswa Smart Scholarship YBM BRILian SBO Malang.
+            Program ini memberikan pembinaan secara berkala, bimbingan serta pelatihan guna membentuk SDM yang unggul,
+            berkarakter, dan memiliki kompetensi yang baik.
+
+            <br><br>
+            SMKN 8 Jember, was toppp!!
+
+        </div>
+
+        <!-- PURNA TUGAS -->
+        <div class="purna-tugas">
+
+            <img src="{{ asset('images/foto1.jpg') }}" alt="foto purna tugas">
+
+            <div class="info">
+
+                <h2>Selamat Purna Tugas</h2>
+
+                <b>H. Kudhoeri, S.Pd.</b><br>
+                Guru PKN
+
+                <p>
+                    Terima kasih atas dedikasi dan pengabdian di SMKN 8 Jember.
+                    Semoga selalu diberikan kesehatan dan keberkahan.
+                </p>
+
+                <p>
+                    Kami mengucapkan terima kasih atas kontribusi Bapak dalam
+                    membangun dan mengembangkan sekolah ini.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- PENGUMUMAN 2 -->
+        <div class="beasiswa" style="margin-top:40px;">
+
+            <div class="beasiswa-left">
+                <p>SELAMAT & SUKSES</p>
+                <p>kepada peserta didik yang menerima beasiswa</p>
+                <h3>Smart Scholarship YBM BRILian SBO MALANG</h3>
+            </div>
+
+            <div class="beasiswa-right">
+                <img src="{{ asset('images/image.png') }}" alt="foto pengumuman">
+                <div class="nama">Hj. Nurhidana, S.Pd., M.Pd</div>
+            </div>
+
+        </div>
+
+        <div class="foto-pengumuman">
+            <img src="{{ asset('images/foto1.jpg') }}" alt="foto pengumuman">
+        </div>
+
+        <div class="deskripsi">
+
+            <b>ESKALASI DAN PERSEMBAHAN</b><br><br>
+
+            Alhamdulillah peserta didik lulus seleksi dan berhak menerima beasiswa Smart Scholarship YBM BRILian SBO Malang.
+            Program ini memberikan pembinaan secara berkala, bimbingan serta pelatihan guna membentuk SDM yang unggul,
+            berkarakter, dan memiliki kompetensi yang baik.
+
+            <br><br>
+            SMKN 8 Jember, was toppp!!
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CSS TAMBAHKAN DI STYLE -->
+
 <style>
-/* SECTION JURUSAN */
-.jurusan{
-    padding:40px 20px 80px;
-    min-height:100vh;
-    background:linear-gradient(to bottom, #FF9E62, #B25E39);
+
+/* PENGUMUMAN */
+.pengumuman{
+    background:#983305;
+    padding-bottom:50px;
 }
 
-.jurusan h2{
-    text-align:center;
+.header-pengumuman{
+    background:rgb(251, 116, 58);
     color:white;
-    margin-bottom:30px;
-    letter-spacing:1px;
+    font-weight:bold;
+    font-size:24px;
+    text-align:center;
+    padding:18px;
+    letter-spacing:2px;
 }
+
+.container-pengumuman{
+    max-width:920px;
+    margin:30px auto;
+    padding:20px;
+}
+
+/* KOTAK PENGUMUMAN */
+.beasiswa{
+    background:#fff5f1;
+    border:3px solid #e05e27;
+    border-radius:6px;
+    display:flex;
+    gap:20px;
+    padding:18px;
+    align-items:center;
+    box-shadow:0 6px 15px rgba(180,85,43,0.3);
+}
+
+.beasiswa-left{
+    flex:1;
+}
+
+.beasiswa-left p{
+    color:#b4552b;
+    font-weight:bold;
+    margin:6px 0;
+}
+
+.beasiswa-left h3{
+    color:#b4552b;
+    margin-top:10px;
+    font-size:20px;
+}
+
+.beasiswa-right{
+    text-align:center;
+}
+
+.beasiswa-right img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:3px solid #b4552b;
+    object-fit:cover;
+}
+
+.nama{
+    font-weight:bold;
+    margin-top:6px;
+    color:#b4552b;
+}
+
+/* FOTO */
+.foto-pengumuman{
+    margin-top:25px;
+    background:#fff5f1;
+    border:3px solid #b4552b;
+    padding:10px;
+    border-radius:6px;
+}
+
+.foto-pengumuman img{
+    width:100%;
+    border-radius:4px;
+}
+
+/* DESKRIPSI */
+.deskripsi{
+    margin-top:20px;
+    background:#fff5f1;
+    padding:15px;
+    border-radius:6px;
+    border:2px solid rgb(251, 116, 58);
+    color:#4d2e20;
+    line-height:1.5;
+}
+
+/* PURNA TUGAS */
+.purna-tugas{
+    margin-top:40px;
+    background:#fff5f1;
+    border:3px solid rgb(251, 116, 58);
+    border-radius:8px;
+    display:flex;
+    gap:20px;
+    padding:20px;
+}
+
+.purna-tugas img{
+    width:150px;
+    height:150px;
+    border-radius:8px;
+    border:3px solid rgb(251, 116, 58);
+    object-fit:cover;
+}
+
+.info{
+    flex:1;
+}
+
+.info h2{
+    color:#b4552b;
+    margin-bottom:8px;
+}
+
+.info p{
+    margin-top:10px;
+    line-height:1.5;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .beasiswa,
+    .purna-tugas{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
 </style>
 
 <script>
