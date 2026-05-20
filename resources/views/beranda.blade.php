@@ -564,7 +564,6 @@ body{
 
 </div>
 
-<!-- TAMBAHKAN DI BAWAH SECTION GALERI -->
 
 <!-- PENGUMUMAN -->
 <div class="pengumuman">
@@ -814,6 +813,7 @@ body{
 
 </style>
 
+
 <script>
 const cards = document.querySelectorAll('.card');
 
@@ -825,4 +825,4 @@ cards.forEach(card => {
 </script>
 
 </body>
-</html>
+
